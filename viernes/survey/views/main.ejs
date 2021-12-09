@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+    </head>
+    <body>
+        <main style="margin: 40px; border: 2px solid black; border-radius: 5px; padding: 25px; width: 50%;">
+            <form method="POST" action="/load/info">
+            
+                <div style="margin-bottom: 20px;">
+                    <label>
+                        First Name:
+                    </label>
+                    <input type="text" name="yname">
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <label>
+                        Dojo Location:
+                    </label>
+                    <select name="location">
+                        <option value="Texas" >Texas</option>
+                        <option value="Seattle" >Seattle</option>
+                        <option value="New York" >New York</option>
+                    </select>
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <label>
+                        Favorite Language:
+                    </label>
+                    <select name="language">
+                        <option value="HTML" >HTML</option>
+                        <option value="Phyton" >Phyton</option>
+                       
+                    </select>
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <label>
+                        Comment (Optional):
+                    </label>
+                    <textarea name="comment"></textarea>
+                </div>
+                <input type="submit" value="Submit" >
+            </form>
+        </main>
+        <script type ="text/javascript" src="/socket.io/socket.io.js"></script> 
+            
+        <script src="/static/index.js"></script>
+    </body>
+</html>

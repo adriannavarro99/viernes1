@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">'    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <title>Multiplayer Pacman</title>
+    </head>
+    <body>
+        <container class="mainContainer">
+            <div class="users">
+                Active Users in Game Screen
+            </div>
+            <div class="chatbox">
+                <div class="messages">
+                </div>
+                <form class="formMessages">
+                    
+                    <h4>Message</h4>
+                    <input id="message" placeholder="Your message here" />
+                    <button type="submit">Send</button>
+                </form>
+                <form class="formUsers">
+                    
+                    <h4>Username</h4>
+                    <input id="formUsers" placeholder="Your username here" />
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </container>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+    <script src="/js/index.js"></script>
+    </body>
+</html>
